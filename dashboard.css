@@ -48,6 +48,9 @@ nav {
   background-color:  #aaf5ff;
   padding: 6px 24px;
 }
+.nav__link {
+  padding: 0 8px;
+}
 
 header {
   background-color: #eadcff;
@@ -97,7 +100,8 @@ ul {
 
 li {
   list-style-type: none;
-  padding-left: 16px;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 
 .row {
@@ -106,6 +110,7 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 img {
@@ -139,7 +144,7 @@ h2 {
 
 .about__image--wrapper {
   max-width: 100%;
-  padding: 32px;
+  padding: 24px;
 }
 
 .section__description--wrapper {
@@ -164,9 +169,9 @@ Process
 */
 
 #process {
-  padding: 48px 0;
+  margin: auto;
+  padding: 32px;
   background-color: #cefeff;
-  height: calc(60vh);
 }
 
 .h2 {
@@ -181,13 +186,13 @@ Process
 }
 
 .discord__image--wrapper {
-  max-width: 60%;
-  padding: 32px;
+  margin: 2px;
+  max-width: 70%;
 }
 
 .process__description--wrapper {
   width: 50%;
-  padding: 64px 64px;
+  padding: 16px;
 }
 
 .process__description--para {
@@ -210,7 +215,7 @@ Action
 
 #action {
   background-color: #dec9ff;
-  padding: 32px;
+  padding: 24px;
 }
 
 form {
@@ -244,8 +249,91 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 6px;
 }
 
 .tc {
   font-size: 12px;
 }
+
+.footer__link {
+  padding: 0 16px;
+}
+
+.FESfoot {
+  max-width: 360px;
+  padding-left: 90px;
+  margin: auto;
+}
+
+/* SMARTPHONES AND TABLETS */
+
+@media (max-width: 728px) {
+  .row {flex-direction: column;
+  }
+
+  .row__description {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .row__description--buttuon {
+    max-width: 240px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .section__description {
+    flex-direction: column;
+  }
+  .section__description--wrapper {
+    width: 100%;
+  }
+
+  .section__description--para {
+    text-align: center;
+  }
+
+  .process__description {
+    flex-direction: column;
+  }
+
+  .discord__image--wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .FESfoot {
+    max-width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer__links {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__link {
+font-size: 12px;
+padding: 0px 6px;
+  }
+
+}
+
